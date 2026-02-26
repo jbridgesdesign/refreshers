@@ -12,6 +12,7 @@
 /* 1. Reset Styles */
 * {
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /* 2. Global Styles */
@@ -37,9 +38,8 @@ h1 {
     font-family: "Oi", serif;
     font-weight: normal;
     text-align: center;
-    margin-bottom: 30px;
-    padding: 10px;
-    font-size: 55px;
+    margin: 10px 0 20px 0;
+    font-size: 50px;
     background: linear-gradient(pink, red);
     background-clip: text; 
     -webkit-text-fill-color: transparent;
@@ -50,7 +50,7 @@ h2 {
     font-weight: normal;
     margin-bottom: 10px;
     font-size: 35px;
-    color: #006241;
+    color: #00472e;
     padding: 10px 0 0 20px;
 }
 
@@ -68,8 +68,8 @@ h4 {
     font-weight: normal;
     margin-bottom: 10px;
     font-size: 22px;
-    color: darkred;
-    padding: 10px 0 0 20px;
+    color: #333;
+    padding: 20px 0 0 20px;
 }
 
 p {
@@ -80,7 +80,9 @@ p {
 }
 
 ul, ol {
-    margin-bottom: 20px;
+    margin: 0 0 20px 20px;
+    width: 810px;
+    line-height: 1.5;
 }
 
 figure img {
@@ -119,7 +121,7 @@ nav {
     margin-bottom: 20px;
     text-align: right;
     /* background-color: #00000070; */
-    width: 900px;
+    width: 850px;
 }
 nav li {
     list-style: none;
@@ -160,9 +162,9 @@ header a {
     padding: 20px;
     background-color: rgba(235, 243, 235, 0.45);
     border-radius: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     max-width: 900px;
-    color: #000;
+    color: #111;
 }
 #content a {
     color: darkred;
@@ -171,22 +173,32 @@ header a {
 #content a:hover {
     color: red;
 }
+#content p {
+    width: 805px;
+}
 
 .last-update {
     margin-left: 20px;
-    font-weight: bold;
-    color: #3b3b3b;
+    color: #FFF;
+    background-color: #00000070;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;;
 }
 
 #sources {
     font-size: 13px;
 }
 
+#tribute {
+    color: #111;
+}
+
 /* 6. Footer */
 footer {
     background: #006241;
     color: #FFF;
-    margin-top: 20px;
+    padding-top: 20px;
     height: 100%;
     border-top: 15px solid #00000070;
     border-bottom: 15px solid #006241;
@@ -200,9 +212,10 @@ footer p {
 footer #info {
     background-color: rgba(235, 243, 235, 0.45);
     border-radius: 25px;
-    width: 650px;
-    height: 65px;
-    margin: 20px auto 30px auto;
+    width: 700px;
+    margin-top: 30px;
+    padding-top: 20px;
+    height: 125px;
 }
 footer a {
     color: pink;
