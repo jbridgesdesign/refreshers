@@ -1,7 +1,20 @@
+/* style.css - We Love Refreshers Tribute Page
+/* Author: J. Bridges Design - https://www.jbridgesdesign.com
+/* Last Updated: February 25, 2026
+
+/* 1. Reset Styles */
+/* 2. Global Styles */
+/* 3. Layout */
+/* 4. Navigation */
+/* 5. Content Sections */
+/* 6. Footer */
+
+/* 1. Reset Styles */
 * {
     margin: 0 auto;
 }
 
+/* 2. Global Styles */
 body {
     font-family: "Work Sans", sans-serif;
     font-size: 16px;
@@ -27,30 +40,81 @@ h1 {
     margin-bottom: 30px;
     padding: 10px;
     font-size: 55px;
+    background: linear-gradient(pink, red);
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {
-    font-family: "Oi", serif;
+    font-family: "Oi", serif; 
     font-weight: normal;
     margin-bottom: 10px;
     font-size: 35px;
+    color: #006241;
+    padding: 10px 0 0 20px;
+}
+
+h3 {
+    font-family: "Oi", serif; 
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #006241;
+    padding: 10px 0 0 20px;
+}
+
+h4 {
+    font-family: "Oi", serif; 
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 22px;
     color: darkred;
     padding: 10px 0 0 20px;
 }
 
-header {
-    padding: 20px;
-    text-align: center;
+p {
+    line-height: 1.5;
+    margin-bottom: 30px;
+    width: 700px;
+    text-align: left;
+}
+
+ul, ol {
     margin-bottom: 20px;
+}
+
+figure img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+figure figcaption {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    font-style: italic;
+    background-color: #00000070;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* 3. Layout */
+main {
     max-width: 900px;
-    background-color: rgba(0, 98, 65, 0.8);
-    border-radius: 0 0 25px 25px;
 }
 
-header p {
-    width: 800px;
+section {
+    margin-bottom: 20px;
+}
+section p {
+    text-align: left;
+    width: 820px;
 }
 
+/* 4. Navigation */
 nav {
     margin-bottom: 20px;
     text-align: right;
@@ -71,29 +135,25 @@ nav li::after {
 nav li:last-child::after {
     content: none;
 }
-
-p {
-    line-height: 1.5;
-    margin-bottom: 30px;
-    width: 700px;
+nav a {
+    color: pink;
 }
 
-main {
-    max-width: 900px;
-}
-
-figure img {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-figure figcaption {
+/* 5. Content Sections */
+header {
+    padding: 20px;
     text-align: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
     margin-bottom: 20px;
-    font-style: italic;
+    max-width: 900px;
+    background-color: rgba(0, 98, 65, 0.8);
+    border-radius: 0 0 25px 25px;
+}
+header p {
+    width: 800px;
+}
+header a {
+    color: pink;
+    text-decoration: underline;
 }
 
 #content {
@@ -104,16 +164,30 @@ figure figcaption {
     max-width: 900px;
     color: #000;
 }
-
-ul {
-    margin-bottom: 20px;
+#content a {
+    color: darkred;
+    text-decoration: underline;
+}
+#content a:hover {
+    color: red;
 }
 
+.last-update {
+    margin-left: 20px;
+    font-weight: bold;
+    color: #3b3b3b;
+}
+
+#sources {
+    font-size: 13px;
+}
+
+/* 6. Footer */
 footer {
     background: #006241;
     color: #FFF;
     margin-top: 20px;
-    height: 400px;
+    height: 100%;
     border-top: 15px solid #00000070;
 }
 footer p {
@@ -122,13 +196,23 @@ footer p {
     max-width: 700px;
     text-align: center;
 }
+footer #info {
+    background-color: rgba(235, 243, 235, 0.45);
+    border-radius: 25px;
+    width: 650px;
+    height: 65px;
+    margin: 20px auto 30px auto;
+}
 footer a {
     color: pink;
 }
-
 footer span#copyright {
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     width: 900px;
     display: block;
+}
+footer .logo {
+    display: block;
+    margin: 20px auto 10px auto;
 }
