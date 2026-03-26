@@ -8,6 +8,7 @@
 /* 4. Navigation */
 /* 5. Content Sections */
 /* 6. Footer */
+/* 7. Media Queries */
 
 /* 1. Reset Styles */
 * {
@@ -75,13 +76,13 @@ h4 {
 p {
     line-height: 1.5;
     margin-bottom: 30px;
-    width: 700px;
+    max-width: 700px;
     text-align: left;
 }
 
 ul, ol {
     margin: 0 0 20px 20px;
-    width: 810px;
+    max-width: 810px;
     line-height: 1.5;
 }
 
@@ -98,7 +99,7 @@ figure figcaption {
     margin-bottom: 60px;
     font-style: italic;
     background-color: #00000070;
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     border-radius: 10px;
 }
@@ -113,7 +114,7 @@ section {
 }
 section p {
     text-align: left;
-    width: 820px;
+    max-width: 820px;
 }
 
 /* 4. Navigation */
@@ -121,7 +122,7 @@ nav {
     margin-bottom: 20px;
     text-align: right;
     /* background-color: #00000070; */
-    width: 850px;
+    max-width: 850px;
 }
 nav li {
     list-style: none;
@@ -142,17 +143,17 @@ nav a {
 }
 
 /* 5. Content Sections */
-header {
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    max-width: 900px;
-    background-color: rgba(0, 98, 65, 0.8);
-    border-radius: 0 0 25px 25px;
-}
-header p {
-    width: 800px;
-}
+    header {
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        max-width: 900px;
+        background-color: rgba(0, 98, 65, 0.8);
+        border-radius: 0 0 25px 25px;
+    }
+    header p {
+        max-width: 800px;
+    }
 header a {
     color: pink;
     text-decoration: underline;
@@ -174,7 +175,7 @@ header a {
     color: red;
 }
 #content p {
-    width: 805px;
+    max-width: 805px;
 }
 
 .last-update {
@@ -212,7 +213,7 @@ footer p {
 footer #info {
     background-color: rgba(235, 243, 235, 0.45);
     border-radius: 25px;
-    width: 700px;
+    max-width: 700px;
     margin-top: 30px;
     padding-top: 20px;
     height: 125px;
@@ -223,10 +224,56 @@ footer a {
 footer span#copyright {
     font-size: 14px;
     text-align: center;
-    width: 900px;
+    max-width: 900px;
     display: block;
 }
 footer .logo {
     display: block;
     margin: 20px auto 10px auto;
+}
+
+/* 7. Media Queries */
+@media (max-width: 700px) {
+    #content, main, footer span#copyright {
+        max-width: 700px;
+    }
+    header, #content p, ul, ol, footer p, footer #info, nav {
+        max-width: 600px;
+    }
+    header p, p {
+        max-width: 500px;
+    }
+    figure figcaption {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    #content, main, footer span#copyright {
+        max-width: 500px;
+    }
+    header, #content p, ul, ol, footer p, footer #info, nav {
+        max-width: 400px;
+    }
+    header p, p {
+        max-width: 350px;
+    }
+    figure figcaption {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 300px) {
+    #content, main, footer span#copyright {
+        max-width: 300px;
+    }
+    header, #content p, ul, ol, footer p, footer #info, nav {
+        max-width: 250px;
+    }
+    header p, p {
+        max-width: 200px;
+    }
+    figure figcaption {
+        max-width: 150px;
+    }
 }
