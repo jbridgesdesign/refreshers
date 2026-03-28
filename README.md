@@ -52,7 +52,7 @@ No build tools or dependencies required — just open it in a browser!
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/jbridgesdesign/we-love-refreshers.git
+   git clone https://github.com/jbridgesdesign/refreshers.git
    ```
 2. Open `index.html` in your browser.
 
